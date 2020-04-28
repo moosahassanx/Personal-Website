@@ -4,7 +4,7 @@
 	font-family: "montserrat", sans-serif;
 }
 
-.landing-page{
+.landing-page-main{
 	width: 100%;
 	height: 100vh;
 	background: #000;
@@ -13,7 +13,7 @@
 }
 
 /* https://negativespace.co/laptop-html-code/ */
-.landing-page::after{
+.landing-page-main::after{
 	content: "";
 	position: absolute;
 	left: 0;
@@ -28,13 +28,52 @@
 	animation: anim 200s linear infinite;
 }
 
-@keyframes anim{
-	50%{
-		transform: scale(2);
-	}
-	100%{
-		transform: scale(1);
-	}
+.landing-page-about{
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	position: relative;
+	overflow: hidden;
+}
+
+/* https://negativespace.co/laptop-html-code/ */
+.landing-page-about::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(https://wallup.net/wp-content/uploads/2017/11/23/521812-light_bulb.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	opacity: 0.3;
+	animation: anim 200s linear infinite;
+}
+
+/* CONTACT */
+.landing-page-contact{
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	position: relative;
+	overflow: hidden;
+}
+
+/* https://negativespace.co/laptop-html-code/ */
+.landing-page-contact::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(https://bitcoinist.com/wp-content/uploads/2019/01/shutterstock_721552603.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	opacity: 0.3;
 }
 
 .page-content{
@@ -77,6 +116,49 @@
 	color: #fff;
 	background: #ff7979;
 }
+
+.page-content-about{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	width: 100%;
+	max-width: 80%;
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+
+.page-content-about h1{
+	color: #ff7979;
+	text-transform: uppercase;
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+.page-content-about p{
+	color: #FFF;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.page-content-about a{
+	display: inline-block;
+	text-decoration: none;
+	color: #ff7979;
+	border: 2px solid #ff7979;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	transform: 0.4s linear;
+	transition: 0.2s;
+}
+
+.page-content-about a:hover{
+	color: #fff;
+	background: #ff7979;
+}
+
+/**/
 
 .text{
 	padding: 10px;
