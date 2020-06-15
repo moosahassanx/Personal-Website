@@ -1,3 +1,8 @@
+<!--TODO: 
+		- dark mode button on top right of landing page
+		- credit button redirecting to background image
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,82 +17,99 @@
 </head>
 <body>
 	<section class="landing-page-main">
+		<div class="top-btns">
+			<a href="https://negativespace.co/laptop-html-code/" target="_blank" class="far fa-image" address="true"></a>
+			<a href="#darkmode" class="fas fa-adjust" address="true"></a>
+		</div>
+
 		<div class="page-content">
 			<h1>Moosa Hassan</h1>
 			<p>Software engineering student.</p>
 			<a href="#about" class="scroll-down" address="true">More</a>
 		</div>
+
+		<footer id="main-footer">
+			<p id="main-footer-text">2020 &copy; All contents are copyright of Moosa Hassan</p>
+		</footer>
 	</section>
 	<section id="about" class="landing-page-about">
-			<h1>About Me</h1>
-			<p>
+		<div class="main-container">
+			<!-- ABOUT ME -->
+			<h1 class="red-header">About Me</h1>
+			<p class="text">
 				I'm a passionate software engineering student in my second year at the University of Newcastle. I am aiming
 				to primarily be a C# and C++ programmer, although I have experienced other languages such as Java, SQL, JQuery
 				and JavaScript. I also have experience in markup languages such as HTML and CSS.
 			</p>
-			<p>
+			<p class="text">
 				Apart from the university courses, I also work on my own unique projects, all of which can be found on this page.
 			</p>	
 			<br><br>
-			
-			
-			<h1>My Projects</h1>
-			<ul>
-				<li>Artist Tracker: A Discord bot which keeps track of a user's favourite artists, announcing their favourite artists through an @ message (unfinished)</li>
-				<li>Dad Bot: A Discord bot which makes pointless Dad jokes.</li>
-				<li>
-					Designed by Chalyse: An aesthetically presenting blog made for a graphic designing student. The website is responsive and presentable from widescreen
-					monitors to new phone screens.
-				</li>
-				<li>3D OLC Engine: A 3D engine which displays objects in a 3D platform (unfinished)</li>
-			</ul>
+				
+			<!-- MY PROJECTS -->
+			<h1 class="red-header">My Projects</h1>
+			<div class="buttons-span">
+				<ul>
+					<li><a href="#link" target="_blank">Playes Bot:</a> A collaborative project with <a href="https://psiv.me/" target="_blank">@Passive</a>. A discord bot connected to Spotify's API for shared listening parties online, 
+						announces artist releases and displays intricate details of artists such as full discographies and their exact releases.</li>
+					<li><a href="https://github.com/moosahassanx" target="_blank">Artist Tracker:</a> A Discord bot which keeps track of a user's favourite artists, announcing their favourite artists through an @ message (unfinished)</li>
+					<li><a href="https://github.com/moosahassanx/DadBot" target="_blank">Dad Bot:</a> A Discord bot which makes pointless Dad jokes.</li>
+					<li>
+						<a href="https://moosahassanx.github.io/Designed-by-Chalyse/">Designed by Chalyse:</a> An aesthetically presenting blog made for a graphic designing student. The website is responsive and presentable from widescreen
+						monitors to new phone screens. [TODO: FINISH THIS]
+					</li>
+					<li><a href="https://github.com/moosahassanx/3D-OLC-Engine">3D OLC Engine:</a> A 3D engine which displays objects in a 3D platform (unfinished).</li>
+				</ul>
+			</div>
 			<br><br>
 
-			<h1>University</h1>
-			<p>2019 Semester 1:</p>
-			<ul>
-				<li>COMP1010 (Computing Fundamentals): Introduction to computers.</li>
-				<li>ENGG1500 (Introduction to Professional Engineering): The concept of engineering.</li>
-				<li>MATH1110 (Mathematics for Engineering, Science and Technology 1): Topics such as...</li>
-				<li>SENG1110 (Object-Oriented Programming): Java Programming.</li>
-			</ul>
-			<p>2019 Semester 2:</p>
-			<ul>
-				<li>COMP1140 (Database and Information Management): First time doing SQL</li>
-				<li>MATH150 (Discrete Mathematics): Bubble heap sorting...</li>
-				<li>SENG1050 (Web Technologies): Web Development using HTML, CSS and JavaScript</li>
-				<li>SENG1120 (Data Structures): Used C++ to create data data structures studied such as...</li>
-			</ul>
-			<p>2020 Semester 1:</p>
-			<ul>
-				<li>ENGG2500 (Sustainable Engineering Practice): Used programs such as HomerPro MATLAB...</li>
-				<li>SENG2130 (Systems Analysis and Design): UML Diagrams...</li>
-				<li>SENG2200 (Programming Languages and Paradigms): Used Java to make...</li>
-				<li>SENG2050 (Web Engineering): Web Development with the addition of JQuery, JSTL, ...</li>
-			</ul>
+			<!-- UNIVERSITY -->
+			<h1 class="red-header">University</h1>
+			<div class="left">
+				<p class="text">2019 Semester 1:</p>
+				<ul>
+					<li><a href="https://www.newcastle.edu.au/course/COMP1010" target="_blank">COMP1010 </a> (Computing Fundamentals): Introduction to computers. [TODO: FINISH THIS]</li>
+					<li><a href="https://www.newcastle.edu.au/course/ENGG1500" target="_blank">ENGG1500 </a> (Introduction to Professional Engineering): The concept of engineering. [TODO: FINISH THIS]</li>
+					<li><a href="https://www.newcastle.edu.au/course/MATH1110" target="_blank">MATH1110</a>(Mathematics for Engineering, Science and Technology 1): Topics such as... [TODO: FINISH THIS]</li>
+					<li><a href="https://www.newcastle.edu.au/course/SENG1110" target="_blank">SENG1110</a> (Object-Oriented Programming): Java Programming. [TODO: FINISH THIS]</li>
+				</ul>
+			</div>
+			<div class="right">
+				<p class="text">2019 Semester 2:</p>
+				<ul>
+					<li><a href="https://www.newcastle.edu.au/course/COMP1140" target="_blank">COMP1140</a> (Database and Information Management): First time doing SQL [TODO: FINISH THIS]</li>
+					<li><a href="https://www.newcastle.edu.au/course/MATH1510" target="_blank">MATH1510</a> (Discrete Mathematics): Bubble heap sorting... [TODO: FINISH THIS]</li>
+					<li><a href="https://www.newcastle.edu.au/course/SENG1050" target="_blank">SENG1050</a> (Web Technologies): Web Development using HTML, CSS and JavaScript [TODO: FINISH THIS]</li>
+					<li><a href="https://www.newcastle.edu.au/course/SENG1120" target="_blank">SENG1120</a> (Data Structures): Used C++ to create data data structures studied such as... [TODO: FINISH THIS]</li>
+				</ul>
+			</div>
+			<div class="temp">
+				<p class="text">2020 Semester 1:</p>
+				<ul>
+					<li><a href="https://www.newcastle.edu.au/course/ENGG2500" target="_blank">ENGG2500</a> (Sustainable Engineering Practice): Used programs such as HomerPro MATLAB... [TODO: FINISH THIS]</li>
+					<li><a href="https://www.newcastle.edu.au/course/SENG2130" target="_blank">SENG2130</a> (Systems Analysis and Design): UML Diagrams... [TODO: FINISH THIS]</li>
+					<li><a href="https://www.newcastle.edu.au/course/SENG2200" target="_blank">SENG2200</a> (Programming Languages and Paradigms): Used Java to create... [TODO: FINISH THIS]</li>
+					<li><a href="https://www.newcastle.edu.au/course/SENG2050" target="_blank">SENG2050</a> (Web Engineering): Web Development with the addition of JQuery, JSTL, ... [TODO: FINISH THIS]</li>
+				</ul>
+			</div>
+			
+			<br><br>
 
-			<h1>Contact</h1>
-			<p>
+			<!-- CONTACT -->
+			<h1 class="red-header">Contact</h1>
+			<p class="text">
 				I can be contacted primarily through e-mail, moosahassan73@gmail.com, but you can also click the button below to
 				be redirected. My social media can also be found here. 
 			</p>
-			<h1>Credit</h1>
-			<ul>
-				<li>Main landing page background: <a href="https://negativespace.co/laptop-html-code/">negativespace.co</a></li>
-				<li>Satellite background: <a href="https://www.nextgov.com/ideas/2019/08/how-satellite-technology-helping-government-make-data-driven-decisions/159570/">nextgov.com</a></li>
-			</ul>
-			<a href="#contact" class="far fa-envelope" address="true"></a>
-			<a href="https://www.youtube.com/channel/UCYOxBB7OAZFvkrdRWctqKHg/" class="fab fa-youtube" address="true" target="_blank"></a>
-			<a href="https://www.instagram.com/moosahassanx/" class="fab fa-instagram" address="true" target="_blank"></a>
-			<a href="https://github.com/moosahassanx" class="fab fa-github" address="true" target="_blank"></a>
-			<a href="https://discord.gg/dvPaVd" class="fab fa-discord" address="true" target="_blank"></a>
-			<a href="https://stackoverflow.com/users/12285098/moosahassan" class="fab fa-stack-overflow" address="true" target="_blank"></a>
-
-		<!--
-		<footer id="main-footer">
-			<p id="main-footer-text">2020 &copy; All contents are copyright of Moosa Hassan</p>
-		</footer>
-		-->
+			<div class="social-media-btns">
+				<a href="mailto:moosahassan73@gmail.com?subject=FROM MOOSA'S SITE: " class="far fa-envelope" address="true"></a>
+				<a href="https://www.youtube.com/channel/UCYOxBB7OAZFvkrdRWctqKHg/" class="fab fa-youtube" address="true" target="_blank"></a>
+				<a href="https://github.com/moosahassanx" class="fab fa-github" address="true" target="_blank"></a>
+				<a href="https://discord.gg/dvPaVd" class="fab fa-discord" address="true" target="_blank"></a>
+				<a href="https://stackoverflow.com/users/12285098/moosahassan" class="fab fa-stack-overflow" address="true" target="_blank"></a>
+			</div>
+			<br><br>
+		</div>
 	</section>
 
 	

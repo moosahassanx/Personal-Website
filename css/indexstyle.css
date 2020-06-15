@@ -4,14 +4,6 @@
 	font-family: "montserrat", sans-serif;
 }
 
-.div1{
-	display: inline-block;
-	width: 50%;
-}
-.div2{
-	display: inline-block;
-}
-
 .landing-page-main{
 	width: 100%;
 	height: 100vh;
@@ -36,38 +28,38 @@
 	animation: anim 200s linear infinite;
 }
 
+.top-btns{
+	position: absolute;
+	top: 2.5%;
+	z-index: 1;
+	width: 100%;
+	text-align: right;
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+.top-btns a{
+	display: inline-block;
+	text-decoration: none;
+	color: #ff7979;
+	border: 2px solid #ff7979;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	transform: 0.4s linear;
+	transition: 0.2s;
+}
+.top-btns a:hover{
+	color: #fff;
+	background: #ff7979;
+}
+
 .landing-page-about{
 	width: 100%;
-	height: 70rem;
 	background: #111111;
 	position: relative;
 	overflow: hidden;
 }
 
-/* CONTACT */
-.landing-page-contact{
-	width: 100%;
-	height: 100vh;
-	background: #000;
-	position: relative;
-	overflow: hidden;
-}
-
-/* https://negativespace.co/laptop-html-code/ */
-.landing-page-contact::after{
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: url(https://bitcoinist.com/wp-content/uploads/2019/01/shutterstock_721552603.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	opacity: 0.3;
-}
-
+/**/
 .page-content{
 	position: absolute;
 	top: 50%;
@@ -156,11 +148,11 @@
 	background: #ff7979;
 }
 
-/**/
-
 .text{
 	padding: 10px;
 	text-align: justify;
+	color: #FFF;
+    margin-bottom: 20px;
 }
 
 .text div{
@@ -180,4 +172,113 @@
 	padding-top: 20px;
 	margin-right: 30px;
 	text-align: center;
+}
+
+.red-header{
+	color: #ff7979;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.main-container{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+.left{
+	width: 45%;
+	float: left;
+	/* border: 1px solid white; */
+}
+
+.left a{
+	display: inline-block;
+	text-decoration: none;
+	color: #ff7979;
+	border: 2px solid #ff7979;
+	transform: 0.4s linear;
+	transition: 0.2s;
+	padding: 5px 5px 5px 5px;
+}
+
+.left a:hover{
+	color: #fff;
+	background: #ff7979;
+}
+
+.right{
+	width: 45%;
+	display: inline-block;
+	/* border: 1px solid white; */
+}
+
+.right a{
+	display: inline-block;
+	text-decoration: none;
+	color: #ff7979;
+	border: 2px solid #ff7979;
+	transform: 0.4s linear;
+	transition: 0.2s;
+	padding: 5px 5px 5px 5px;
+}
+
+.right a:hover{
+	color: #fff;
+	background: #ff7979;
+}
+
+.temp a{
+	display: inline-block;
+	text-decoration: none;
+	color: #ff7979;
+	border: 2px solid #ff7979;
+	transform: 0.4s linear;
+	transition: 0.2s;
+	padding: 5px 5px 5px 5px;
+}
+
+.temp a:hover{
+	color: #fff;
+	background: #ff7979;
+}
+
+.social-media-btns{
+	padding-bottom: 15px;
+	width: 314px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.social-media-btns a{
+	display: inline-block;
+	text-decoration: none;
+	color: #ff7979;
+	border: 2px solid #ff7979;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	transform: 0.4s linear;
+	transition: 0.2s;
+}
+
+.social-media-btns a:hover{
+	color: #fff;
+	background: #ff7979;
+}
+
+.buttons-span a{
+	display: inline-block;
+	text-decoration: none;
+	color: #ff7979;
+	border: 2px solid #ff7979;
+	transform: 0.4s linear;
+	transition: 0.2s;
+	padding: 5px 5px 5px 5px;
+}
+
+.buttons-span a:hover{
+	color: #fff;
+	background: #ff7979;
 }
