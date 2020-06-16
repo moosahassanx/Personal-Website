@@ -234,12 +234,74 @@
 	background: #ff7979;
 }
 
+#reference{
+	border: 2px solid #ff7979;
+    background-color: Transparent;
+    border: 1;
+    border-color: #ff7979;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    width: 40px;
+    height: 30px;
+    color: #ff7979;
+	transition: 0.2s;
+}
+#reference:hover{
+	color: #FFF;
+	background: #ff7979;
+}
+#darkmode{
+    border: 2px solid #ff7979;
+    background-color: Transparent;
+    border: 1;
+    border-color: #ff7979;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    width: 40px;
+    height: 30px;
+    color: #ff7979;
+	transition: 0.2s;
+}
+#darkmode:hover{
+	color: #FFF;
+	background: #ff7979;
+}
 
 /* LIGHT MODE */
 .light-test{
 	color: #000;
 }
-
 .light-header{
-	color: #FFF;
+	color: #000;
+}
+.light-background{
+	background-color: #FFF;
+}
+.light-text{
+	color: #000;
+}
+.light-parallax{
+	width: 100%;
+	height: 100vh;
+	background: #FFF;
+	position: relative;
+	overflow: hidden;
+}
+.light-parallax::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	opacity: 0.3;
+	animation: anim 200s linear infinite;
+}
+.light-footer{
+	color: #7f8d8c;
 }
