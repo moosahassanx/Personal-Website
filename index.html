@@ -9,16 +9,27 @@
 	<!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
 	<script src="https://kit.fontawesome.com/a913ebebd3.js" crossorigin="anonymous"></script>
 	<script src="js/scripting.js"></script>
+	<script>
+		function toggleDark() {
+			var background = document.getElementById("");
+
+			var element = document.getElementById("page-content");
+   			element.classList.toggle("light-test");
+
+			var heading = document.getElementById("red-header");
+			heading.classList.toggle("light-header");
+		}
+	</script>
 </head>
 <body>
 	<!-- LANDING PAGE -->
 	<section class="landing-page-main">
 		<div class="top-btns">
 			<a href="https://negativespace.co/laptop-html-code/" target="_blank" class="far fa-image" address="true"></a>
-			<a href="#darkmode" class="fas fa-adjust" address="true"></a>
+			<button class="fas fa-adjust" address="true" onclick="toggleDark()"></button>
 		</div>
 
-		<div class="page-content">
+		<div id="page-content" class="page-content">
 			<h1>Moosa Hassan</h1>
 			<p>Software engineering student.</p>
 			<a href="#about" class="scroll-down" address="true">More</a>
@@ -33,7 +44,7 @@
 	<section id="about" class="landing-page-about">
 		<div class="main-container">
 			<!-- ABOUT ME -->
-			<h1 class="red-header">About Me</h1>
+			<h1 id="red-header" class="red-header">About Me</h1>
 			<p class="text">
 				I'm a passionate software engineering student in my second year at the University of Newcastle. I am aiming
 				to primarily be a C# and C++ programmer, although I have experienced other languages such as Java, SQL, JQuery
