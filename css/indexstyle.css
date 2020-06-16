@@ -25,6 +25,7 @@
 	background-size: cover;
 	opacity: 0.3;
 	animation: anim 200s linear infinite;
+	transition: 0.4s;
 }
 
 /* CREDITS AND DARK MODE BUTTON */
@@ -37,18 +38,21 @@
 	padding: 0 40px;
 	box-sizing: border-box;
 }
-.top-btns a{
-	display: inline-block;
-	text-decoration: none;
-	color: #ff7979;
+.top-btns button{
 	border: 2px solid #ff7979;
-	text-transform: uppercase;
-	padding: 5px 10px;
-	transform: 0.4s linear;
+    background-color: Transparent;
+    border: 1;
+    border-color: #ff7979;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    width: 40px;
+    height: 30px;
+    color: #ff7979;
 	transition: 0.2s;
 }
-.top-btns a:hover{
-	color: #fff;
+.top-btns button:hover{
+	color: #FFF;
 	background: #ff7979;
 }
 
@@ -70,10 +74,13 @@
 	text-transform: uppercase;
 	font-size: 35px;
 	margin-bottom: 20px;
+	transition: 0.3s;
 }
 .page-content p{
 	color: #FFF;
 	margin-bottom: 20px;
+	transition: 0.3s;
+	transition-delay: 0.5s;
 }
 .page-content a{
 	display: inline-block;
@@ -234,50 +241,53 @@
 	background: #ff7979;
 }
 
-#reference{
-	border: 2px solid #ff7979;
+/* LIGHT MODE */
+.light-test h1{
+	color: #161616;
+	transition: 0.4s;
+}
+.light-test p{
+	color: #000000;
+	transition: 0.4s;
+	transition-delay: 0.5s;
+}
+.light-test a{
+	display: inline-block;
+	text-decoration: none;
+	color: #000000;
+	border: 2px solid #000000;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	transform: 0.4s linear;
+	transition: 0.2s;
+}
+.light-test a:hover{
+	color: rgb(255, 255, 255);
+	background: #000000;
+}
+.light-top-btns button{
+	border: 2px solid #000000;
     background-color: Transparent;
     border: 1;
-    border-color: #ff7979;
+    border-color: #000000;
     cursor:pointer;
     overflow: hidden;
     outline:none;
     width: 40px;
     height: 30px;
-    color: #ff7979;
+    color: #000000;
 	transition: 0.2s;
 }
-#reference:hover{
+.light-top-btns button:hover{
 	color: #FFF;
-	background: #ff7979;
-}
-#darkmode{
-    border: 2px solid #ff7979;
-    background-color: Transparent;
-    border: 1;
-    border-color: #ff7979;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-    width: 40px;
-    height: 30px;
-    color: #ff7979;
-	transition: 0.2s;
-}
-#darkmode:hover{
-	color: #FFF;
-	background: #ff7979;
+	background: #000000;
 }
 
-/* LIGHT MODE */
-.light-test{
-	color: #000;
-}
 .light-header{
-	color: #000;
+	color: #1e2022;
 }
 .light-background{
-	background-color: #FFF;
+	background-color: #d4d4d4;
 }
 .light-text{
 	color: #000;
@@ -288,6 +298,7 @@
 	background: #FFF;
 	position: relative;
 	overflow: hidden;
+	transition: 0.4s;
 }
 .light-parallax::after{
 	content: "";
@@ -299,9 +310,79 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	opacity: 0.3;
+	opacity: 0.85;
 	animation: anim 200s linear infinite;
 }
+
+.light-buttons-span a{
+	display: inline-block;
+	text-decoration: none;
+	color: #000000;
+	border: 2px solid #000000;
+	transform: 0.4s linear;
+	transition: 0.2s;
+	padding: 5px 5px 5px 5px;
+}
+.light-buttons-span a:hover{
+	color: rgb(255, 255, 255);
+	background: #000000;
+}
+.light-left a{
+	display: inline-block;
+	text-decoration: none;
+	color: #000000;
+	border: 2px solid #000000;
+	transform: 0.4s linear;
+	transition: 0.2s;
+	padding: 5px 5px 5px 5px;
+}
+.light-left a:hover{
+	color: rgb(255, 255, 255);
+	background: #000000;
+}
+.light-right a{
+	display: inline-block;
+	text-decoration: none;
+	color: #000000;
+	border: 2px solid #000000;
+	transform: 0.4s linear;
+	transition: 0.2s;
+	padding: 5px 5px 5px 5px;
+}
+.light-right a:hover{
+	color: rgb(255, 255, 255);
+	background: #000000;
+}
+.light-temp a{
+	display: inline-block;
+	text-decoration: none;
+	color: #000000;
+	border: 2px solid #000000;
+	transform: 0.4s linear;
+	transition: 0.2s;
+	padding: 5px 5px 5px 5px;
+}
+.light-temp a:hover{
+	color: rgb(255, 255, 255);
+	background: #000000;
+}
+.light-social-media-btns a{
+	display: inline-block;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	border: 2px solid #000000;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	transform: 0.4s linear;
+	transition: 0.2s;
+}
+.light-social-media-btns a:hover{
+	color: rgb(255, 255, 255);
+	background: #000000;
+}
+
 .light-footer{
-	color: #7f8d8c;
+	position: relative;
+	color: #000;
+	z-index: 1;
 }

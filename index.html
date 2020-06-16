@@ -11,17 +11,20 @@
 	<script src="js/scripting.js"></script>
 	<script>
 		function toggleDark() {
-			var footerText = document.getElementById("main-footer-text");
-			footerText.classList.toggle("light-footer");
-
 			var parallaxBackground = document.getElementById("parallax");
 			parallaxBackground.classList.toggle("light-parallax");
 
-			var background = document.getElementById("about");
-			background.classList.toggle("light-background");
-
 			var element = document.getElementById("page-content");
    			element.classList.toggle("light-test");
+
+			var btns = document.getElementsByClassName("top-btns");
+			btns[0].classList.toggle("light-top-btns");
+
+			var footerText = document.getElementById("main-footer-text");
+			footerText.classList.toggle("light-footer");
+
+			var background = document.getElementById("about");
+			background.classList.toggle("light-background");
 
 			var heading = document.getElementsByClassName("red-header");
 			var i;
@@ -34,6 +37,26 @@
 			for(j = 0; j < writing.length; j++){
 				writing[j].classList.toggle("light-text");
 			}
+
+			var btnSpan = document.getElementsByClassName("buttons-span");
+			btnSpan[0].classList.toggle("light-buttons-span");
+
+			var leftDiv = document.getElementsByClassName("left");
+			leftDiv[0].classList.toggle("light-left");
+
+			var rightDiv = document.getElementsByClassName("right");
+			rightDiv[0].classList.toggle("light-right");
+
+			var tempDiv = document.getElementsByClassName("temp");
+			tempDiv[0].classList.toggle("light-temp");
+
+			var socialMediaBtnsDiv = document.getElementsByClassName("social-media-btns");
+			socialMediaBtnsDiv[0].classList.toggle("light-social-media-btns");
+
+			var purposelyScrewUp = document.getElementsByClassName("yo");
+			purposelyScrewUp.classList.toggle("light-yo");
+			var topButtons = document.getElementsByClassName("top-btns");
+			topButtons[0].classList.toggle("light-top-btns");
 		}
 	</script>
 </head>
@@ -41,12 +64,12 @@
 	<!-- LANDING PAGE -->
 	<section id="parallax" class="landing-page-main">
 		<div class="top-btns">
-			<button id="reference" class="far fa-image" address="true" onClick="window.open('https://negativespace.co/laptop-html-code/');"></button>
-			<button id="darkmode" class="fas fa-adjust" address="true" onclick="toggleDark()"></button>
+			<button class="far fa-image" address="true" onClick="window.open('https://negativespace.co/laptop-html-code/');"></button>
+			<button class="fas fa-adjust" address="true" onclick="toggleDark()"></button>
 		</div>
 
 		<div id="page-content" class="page-content">
-			<h1>Moosa Hassan</h1>
+			<h1 class="red-header">Moosa Hassan</h1>
 			<p>Software engineering student.</p>
 			<a href="#about" class="scroll-down" address="true">More</a>
 		</div>
@@ -68,7 +91,7 @@
 			</p>
 			<p class="text">
 				Apart from the university courses, I also work on my own unique projects, all of which can be found on this page.
-			</p>	
+			</p>
 			<br><br>
 				
 			<!-- MY PROJECTS -->
@@ -80,7 +103,7 @@
 					<li class="text"><a href="https://github.com/moosahassanx" target="_blank">Artist Tracker:</a> A Discord bot which keeps track of a user's favourite artists, announcing their favourite artists through an @ message (unfinished)</li>
 					<li class="text"><a href="https://github.com/moosahassanx/DadBot" target="_blank">Dad Bot:</a> A Discord bot which makes pointless Dad jokes.</li>
 					<li class="text">
-						<a href="https://moosahassanx.github.io/Designed-by-Chalyse/">Designed by Chalyse:</a> An aesthetically presenting blog made for a graphic designing student. The website is responsive and presentable from widescreen
+						<a href="https://moosahassanx.github.io/Designed-by-Chalyse/" target="_blank">Designed by Chalyse:</a> An aesthetically presenting blog made for a graphic designing student. The website is responsive and presentable from widescreen
 						monitors to new phone screens. [TODO: FINISH THIS]
 					</li>
 					<li class="text"><a href="https://github.com/moosahassanx/3D-OLC-Engine">3D OLC Engine:</a> A 3D engine which displays objects in a 3D platform (unfinished).</li>
