@@ -117,7 +117,6 @@
 /* FOR NORMAL TEXT */
 .text{
 	padding: 10px;
-	text-align: justify;
 	color: #FFF;
     margin-bottom: 20px;
 }
