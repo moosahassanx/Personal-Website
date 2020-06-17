@@ -242,7 +242,7 @@
 
 /* LIGHT MODE */
 .light-test h1{
-	color: #161616;
+	color: #104668;
 	transition: 0.4s;
 }
 .light-test p{
@@ -253,8 +253,8 @@
 .light-test a{
 	display: inline-block;
 	text-decoration: none;
-	color: #000000;
-	border: 2px solid #000000;
+	color: #104668;
+	border: 2px solid #104668;
 	text-transform: uppercase;
 	padding: 10px 20px;
 	transform: 0.4s linear;
@@ -262,31 +262,31 @@
 }
 .light-test a:hover{
 	color: rgb(255, 255, 255);
-	background: #000000;
+	background: #104668;
 }
 .light-top-btns button{
-	border: 2px solid #000000;
+	border: 2px solid #104668;
     background-color: Transparent;
     border: 1;
-    border-color: #000000;
+    border-color: #104668;
     cursor:pointer;
     overflow: hidden;
     outline:none;
     width: 40px;
     height: 30px;
-    color: #000000;
+    color: #042b44;
 	transition: 0.2s;
 }
 .light-top-btns button:hover{
 	color: #FFF;
-	background: #000000;
+	background: #104668;
 }
 
 .light-header{
-	color: #1e2022;
+	color: #104668;
 }
 .light-background{
-	background-color: #d4d4d4;
+	background-color: #e7e7e7;
 }
 .light-text{
 	color: #000;
@@ -309,67 +309,67 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	opacity: 0.85;
+	opacity: 0.55;
 	animation: anim 200s linear infinite;
 }
 
 .light-buttons-span a{
 	display: inline-block;
 	text-decoration: none;
-	color: #000000;
-	border: 2px solid #000000;
+	color: #104668;
+	border: 2px solid #104668;
 	transform: 0.4s linear;
 	transition: 0.2s;
 	padding: 5px 5px 5px 5px;
 }
 .light-buttons-span a:hover{
 	color: rgb(255, 255, 255);
-	background: #000000;
+	background: #042b44;
 }
 .light-left a{
 	display: inline-block;
 	text-decoration: none;
-	color: #000000;
-	border: 2px solid #000000;
+	color: #104668;
+	border: 2px solid #104668;
 	transform: 0.4s linear;
 	transition: 0.2s;
 	padding: 5px 5px 5px 5px;
 }
 .light-left a:hover{
 	color: rgb(255, 255, 255);
-	background: #000000;
+	background: #042b44;
 }
 .light-right a{
 	display: inline-block;
 	text-decoration: none;
-	color: #000000;
-	border: 2px solid #000000;
+	color: #104668;
+	border: 2px solid #104668;
 	transform: 0.4s linear;
 	transition: 0.2s;
 	padding: 5px 5px 5px 5px;
 }
 .light-right a:hover{
 	color: rgb(255, 255, 255);
-	background: #000000;
+	background: #042b44;
 }
 .light-temp a{
 	display: inline-block;
 	text-decoration: none;
-	color: #000000;
-	border: 2px solid #000000;
+	color: #104668;
+	border: 2px solid #104668;
 	transform: 0.4s linear;
 	transition: 0.2s;
 	padding: 5px 5px 5px 5px;
 }
 .light-temp a:hover{
 	color: rgb(255, 255, 255);
-	background: #000000;
+	background: #104668;
 }
 .light-social-media-btns a{
 	display: inline-block;
 	text-decoration: none;
-	color: rgb(0, 0, 0);
-	border: 2px solid #000000;
+	color: #104668;
+	border: 2px solid #104668;
 	text-transform: uppercase;
 	padding: 10px 20px;
 	transform: 0.4s linear;
@@ -377,7 +377,7 @@
 }
 .light-social-media-btns a:hover{
 	color: rgb(255, 255, 255);
-	background: #000000;
+	background: #104668;
 }
 
 .light-footer{
